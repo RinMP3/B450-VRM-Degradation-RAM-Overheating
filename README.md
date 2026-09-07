@@ -46,3 +46,7 @@
 System stabilized at **`2133 MHz JEDEC`** baseline operational frequency while awaiting platform-level hardware upgrades (modern motherboard PCB topology & shielded RAM modules).
 
 **Key Engineering Insight:** Single-module stress testing only proves IC cell retention — it does **NOT** validate system-level signal crosstalk, PCB trace attenuation, or VRM transient stability under dual-channel operational loads.
+
+### Update 07.09.2026
+
+Further long-term testing confirmed that all instability symptoms were fully resolved after reverting the CPU to stock settings (disabling the OC). This indicates that the observed issues were driven by a reduction in the system's overall stability margin under elevated loads and voltages, rather than a permanent hardware failure or physical degradation of the VRM circuitry. This case highlights how thermal stress and aggressive clock speeds directly erode component safety margins over time.
